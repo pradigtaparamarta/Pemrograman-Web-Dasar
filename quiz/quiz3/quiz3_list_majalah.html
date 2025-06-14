@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2PM Bookstore</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Verdana', sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      color: whitesmoke;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 450px;
+      max-height: 350px;
+      object-fit: contain;
+      border-radius: 8px;
+      background-color: #eaeaea;
+    }
+    
+    .gallery-item p {
+     max-width: 270px;
+     height: 40px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     position: relative;
+     margin: 5px auto 0;
+     text-align: left;
+    }
+
+    .gallery-item p span {
+     display: inline-block;
+     padding-left: 100%;
+     animation: slideText 15s linear infinite;
+    }
+     
+    @keyframes slideText {
+     0% { transform: translateX(0%);}
+     100% { transform: translateX(-100%); }
+    }
+
+    .center-table {
+     display: flex;
+     justify-content: center;
+    }
+
+    .book-container {
+      text-align: center;
+    }
+
+    .book-cover {
+      display: inline-block;
+      width: 250px;
+      height: 320px;
+      border-radius: 12px;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="2PMWhite.jpg" alt="Logo 2PM">
+    <h1 >2PM Bookstore</h1>
+  </header>
+
+  <nav>
+    <a href="quiz3_digta.html">HOME</a>
+    <a href="quiz3_list_buku.html">BUKU</a>
+    <a href="quiz3_list_majalah.html">MAJALAH</a>
+    <a href="quiz7.html">KORAN</a>
+  </nav>
+
+  <section>
+    <div class="center-table">
+     <div class="gallery-item img">
+      <div class="gallery-item p">
+        <div class="section-title">Majalah Tempo</div>    
+          <table>
+           <tr>
+             <td><img src="gambar/tempo2.jpg" alt="Aib Anggaran Anies">
+               <p><span>Aib Anggaran Anies</span></p></td>
+             <td><img src="gambar/tempo3.jpg" alt="Cepat Cepat Kereta Cepat">
+               <p><span>Cepat Cepat Kereta Cepat</span></p></td>
+             <td><img src="gambar/tempo1.jpg" alt="Dua Wajah Ahok">
+               <p><span>Dua Wajah Ahok</span></p></td>
+             <td><img src="gambar/tempo4.jpg" alt="Kantong Bocor Dana Umat">
+              <p><span>Kantong Bocor Dana Umat</span></p></td>
+          </tr>
+        </table>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section>
+    <div class="center-table">
+     <div class="gallery-item img">  
+      <div class="gallery-item p">
+        <div class="section-title">Majalah Time</div>
+         <table>
+          <tr> 
+           <td><img src="gambar/time3.jpg" alt="Person of The Century: Albert Einstein">
+               <p><span>Person of The Century: Albert Einstein</span></p></td>
+           <td><img src="gambar/time4.jpg" alt="The Power of Shyness">
+               <p><span>The Power of Shyness</span></p></td>
+           <td><img src="gambar/time1.jpg" alt="The 100 Most Influential People: Leonardo DiCaprio">
+               <p><span>The 100 Most Influential People: Leonardo DiCaprio</span></p></td>
+           <td><img src="gambar/time2.jpg" alt="World Wins The World Cup">
+               <p><span>World Wins The World Cup</span></p></td>
+           
+           
+           </tr>
+         </table>
+        </div>
+       </div>
+      </div>
+    </section>
+
+  <footer>
+    Pradigta Paramarta M.
+  </footer>
+
+</body>
+</html>
