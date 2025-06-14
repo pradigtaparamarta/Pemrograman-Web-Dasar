@@ -1,0 +1,26 @@
+.navbar{
+    background-color: black;
+    margin: 0px;
+    padding: 30px;
+}
+.container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.menu{
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+.menu li{
+    padding-left: 0px;
+    margin-right: 30px;
+}
+.menu li a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
