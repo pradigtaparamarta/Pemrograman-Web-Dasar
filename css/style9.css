@@ -1,0 +1,51 @@
+body{
+  font-family: verdana;
+  margin: 30px;
+  background-color: white;
+}
+
+.beli-container{
+  background: #eaeaea;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0,1);
+}
+
+.beli-content{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.cover-buku{
+  width: 1600px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.info-buku{
+  flex: 2;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.info-buku p{
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.tombol-beli{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 15px 50px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: (14px, 2vw, 18px);
+}
